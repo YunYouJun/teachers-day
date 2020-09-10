@@ -1,10 +1,10 @@
 <template>
-  <BlackBoard :msg="msg" />
+  <BlackBoard :msg="msg" :greeting="greeting" />
 </template>
 
 <script>
 import BlackBoard from "./components/BlackBoard.vue";
-
+const params = new URL(document.location).searchParams;
 export default {
   name: "App",
   components: {
@@ -12,7 +12,8 @@ export default {
   },
   data() {
     return {
-      msg: new URL(document.location).searchParams.get("msg"),
+      msg: params.get("msg") || "祝老师",
+      greeting: params.get("greeting") || "教师节快乐",
     };
   },
 };

@@ -4,7 +4,10 @@
 
 ## Usage
 
-<https://yunyoujun.cn/teachers-day?msg=祝X老师>
+- msg: 自定义消息（祝老师）
+- greeting: 自定义问候（教师节快乐）
+
+<https://yunyoujun.cn/teachers-day?msg=祝老师&greeting=教师节快乐>
 
 ## Ref
 

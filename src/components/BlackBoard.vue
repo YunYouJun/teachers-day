@@ -230,11 +230,7 @@ export default {
   name: "BlackBoard",
   props: {
     msg: String,
-  },
-  data() {
-    return {
-      greeting: "教师节快乐",
-    };
+    greeting: String,
   },
 };
 </script>
